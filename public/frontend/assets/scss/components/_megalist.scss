@@ -1,0 +1,104 @@
+.menu-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.menu {
+  width: 100%;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.menu a,
+.menu a:link,
+.menu a:visited,
+.menu a:focus,
+span {
+  color: rgb(155, 155, 155);
+  text-decoration: none;
+}
+.menu a:hover {
+  color: #686868;
+  text-decoration: none;
+}
+.menu > li {
+  display: block;
+}
+.menu > li > a {
+  padding: 16px 2px;
+  display: block;
+  color: $grey-300;
+}
+.menu > li:hover > a {
+  transition: 1s ease;
+  color: white;
+  padding-left: 0.5rem;
+}
+.menu > li:hover {
+  background-color: $primary;
+}
+/* Megadrop width dropdown */
+.menu > li > .megadrop {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  list-style: none;
+  top: 0px;
+  left: 153px;
+  left: 100.5%;
+  width: 200px;
+  min-height: 100%;
+  text-align: left;
+  margin-top: 30px;
+  padding: 0;
+  z-index: 99;
+  padding: 1rem;
+  overflow: hidden;
+  box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.273);
+}
+@media (max-width: 767px) {
+  .menu > li > .megadrop {
+    left: 153px;
+  }
+}
+.menu > li:hover .megadrop {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0px;
+  background-color: white;
+}
+.menu ul li:hover:after {
+  color: #227087;
+}
+
+.menu > li > ul li ul,
+.menu li > ul li,
+.menu > li > .megadrop,
+.menu > li > ul,
+.menu > li {
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-outs;
+}
+
+.megadrop {
+  padding: 0 !important;
+  .nav-item {
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.132);
+    padding: 0.5rem 1rem;
+    &:hover {
+      transition: 0.5s ease-in-out;
+      background-color: $primary;
+      a {
+        transition: 0.8s ease-in-out;
+        color: white !important;
+      }
+    }
+  }
+}

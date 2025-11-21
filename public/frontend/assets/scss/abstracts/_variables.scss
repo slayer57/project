@@ -1,0 +1,70 @@
+//*colors
+
+//primary color
+$primary: #007c00;
+$primary-100: #67945f;
+
+//yellow
+$yellow: #fbcf5e;
+$orange: #dc8401;
+$orange-100: #ff0202;
+//base color
+$black-600: #121212;
+$black-500: #252525;
+$black-500: #242424;
+$grey-500: #f4f4f4;
+$grey-400: #e2e6e8;
+$grey-300: #414141;
+$grey-200: #696969;
+$grey-100: #878787;
+$grey: #939393;
+
+//default
+$black: #000000;
+$white: #ffffff;
+
+//secondary
+$secondary: #ff0202;
+$dark: #292929;
+
+//theme colors
+
+$theme-colors: (
+  "grey": $grey,
+  "white": $white,
+  "black": $black,
+  "primary": $primary,
+  "primary-100": $primary-100,
+  "black-600": $black-600,
+  "black-500": $black-500,
+  "grey-500": $grey-500,
+  "grey-400": $grey-400,
+  "grey-300": $grey-300,
+  "grey-200": $grey-200,
+  "grey-100": $grey-100,
+  "secondary": $secondary,
+  "dark": $dark,
+  "yellow": $yellow,
+  "orange": $orange,
+  "orange-100": $orange,
+);
+
+//*grid
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 375px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1400px,
+  xxl: 1600,
+  xxxl: 1800px,
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1300px,
+  xxl: 1560,
+  xxxl: 1700px,
+);

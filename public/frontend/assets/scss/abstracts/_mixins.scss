@@ -1,0 +1,23 @@
+@mixin typography($font-size, $font-weight, $line-height) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin clamp($line) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin media_wrapper($width, $height, $object) {
+  width: $width;
+  height: $height;
+  overflow: hidden !important;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: $object;
+  }
+}
