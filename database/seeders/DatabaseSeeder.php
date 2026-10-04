@@ -85,7 +85,7 @@ class DatabaseSeeder extends Seeder
         User::create([
             'first_name' => 'Super Admin',
             'last_name' => '',
-            'email' => 'admin@leideu.com',
+            'email' => 'admin@walkora.com',
             'password' => 'password',
             'user_type' => 'Administrator'
         ]);
