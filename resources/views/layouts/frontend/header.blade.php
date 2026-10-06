@@ -15,7 +15,7 @@
                 <div class="logo">
                     <a href="{{ route('home') }}">
                         <img src="{{ $settings['site_main_logo'] ? asset('admin/images/setting/' . $settings['site_main_logo']) : asset('frontend/assets/images/logo.png') }}"
-                            alt="logo" />
+                            alt="logo" width="150" height="45" />
                     </a>
                 </div>
             </div>

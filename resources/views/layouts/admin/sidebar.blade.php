@@ -2,7 +2,7 @@
     <div class="app-brand d-flex justify-content-center demo ml-2">
         <a href="{{ route('home') }}" class="app-brand-link">
             <img src="{{ $settings['site_main_logo'] ? asset('admin/images/setting/' . $settings['site_main_logo']) : asset('admin/images/logo.png') }}"
-                alt="" height="120" class="">
+                alt="" width="150" height="45" class="">
         </a>
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
             <i class="bx bx-chevron-left bx-sm align-middle"></i>
